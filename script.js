@@ -5,7 +5,7 @@ function validateSyntax() {
     let result = ''; // Placeholder for validation result
     
       // Check if input starts with 'pet_' and contains only letters and numbers 
-     if ( input.startsWith(pet_) &&  /^[a-zA-Z0-9]*$/.test(input.substring(4))) {
+     if ( input.startsWith('pet_') &&  /^[a-zA-Z0-9]*$/.test(input.substring(4))) {
         result = "Valid Syntax";  // If valid, set result to "Valid Syntax"
      } else {
         result = "Invalid Syntax"; // If not, set result to "Invalid Syntax"
