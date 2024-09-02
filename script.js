@@ -2,10 +2,11 @@ function validateSyntax() {
        // Get the value of the input field with id 'petInput'
     let input = document.getElementById('petInput').value;
     // Validation logic goes here
+    
     let result = ''; // Placeholder for validation result
     
       // Check if input starts with 'pet_' and contains only letters and numbers 
-     if ( input.startsWith('pet_') &&  /^[a-zA-Z0-9]*$/.test(input.substring(4))) {
+     if ( input.startsWith('pet_') &&/^pet_\d{4}[a-zA-Z]+$/.test(input)) {
         result = "Valid Syntax";  // If valid, set result to "Valid Syntax"
      } else {
         result = "Invalid Syntax"; // If not, set result to "Invalid Syntax"
